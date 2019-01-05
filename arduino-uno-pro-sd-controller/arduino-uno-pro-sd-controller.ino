@@ -43,6 +43,9 @@ void loop() {
   }
   // Else forward SD card detect signal.
   // Use for example M20 to list the sd card.
+  // Open a file on sdcard for writing (streaming) with Gcode "M28".
+  // Then send the Gcode file contents. There exists also a binary option.
+  // Close file with "M29". Start print with "M23" and "M24"
 }
 
 void beginSdCard(SdFat &sd, int cs_pin) {
